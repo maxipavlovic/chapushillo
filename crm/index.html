@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
-    <title>Pusher Test</title>
+    <title>CRM</title>
 </head>
 <body>
-<h1>Pusher Test</h1>
+<h1>PoC</h1>
 <p>
     Publish an event to channel <code>private-foobar</code>
     with event name <code>my-event</code>; it will appear below:
@@ -22,8 +22,8 @@
     // Enable pusher logging - don't include this in production
     Pusher.logToConsole = true;
 
-    var pusher = new Pusher('06fae1e0be54746e9270', {
-        cluster: 'eu',
+    var pusher = new Pusher(__PUSHER_KEY__, {
+        cluster: __PUSHER_CLUSTER__,
         authEndpoint: 'http://localhost:8000/pusher/auth'
     });
 
