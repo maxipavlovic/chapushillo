@@ -22,8 +22,11 @@
     // Enable pusher logging - don't include this in production
     Pusher.logToConsole = true;
 
-    var pusher = new Pusher(__PUSHER_KEY__, {
-        cluster: __PUSHER_CLUSTER__,
+    const pusherKey = "__PUSHER_KEY__";  // smth like 08fae1e0be54746e9270
+    const pusherCluster = "eu";
+
+    var pusher = new Pusher(pusherKey, {
+        cluster: pusherCluster,
         authEndpoint: 'http://localhost:8000/pusher/auth'
     });
 
