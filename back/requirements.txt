@@ -1,0 +1,6 @@
+pusher
+aiohttp
+fastapi
+uvicorn
+python-multipart
+python-dotenv
